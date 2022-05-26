@@ -83,15 +83,3 @@ chisq_test(st_infer, status ~ color)
 
     # Note: both chisq_test() and chisq.test() give Pearson Chi-Square
           # and not likelihood ratio chi-square()
-
-
-
-
-
-
-# goodness of fit tests
-
-gof <- read_csv(here("DiscreteGOF.csv")) %>% clean_names() %>%
-  convert(fct(color))
-
-gof
