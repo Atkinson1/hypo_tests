@@ -28,7 +28,6 @@ ci <- get_ci(boot_null)
 visualize(boot_null) +
   shade_ci(endpoints = ci)
 
-
 # Alternatively, use the bootstrap distribution to 
 # find a confidence interval using the standard error:
 standard_error_ci <- boot_null %>%
@@ -56,7 +55,6 @@ null_dist %>%
 
 two_samp <- tibble(samp_one = c(rep(1, 8), rep(0, 122)), 
                    samp_two = c(rep(1, 19), rep(0, 111)))
-
 
 # inferr
     # p-value that tests difference
@@ -96,31 +94,12 @@ visualize(two_samp_infer_ci) +
 # Normal approximation of the binomial distribution
 plot(dbinom(x = 1:20, size = 20, prob = 0.5))
 
-
-
-
 # Fisher's exact test for small sample size
 https://www.statology.org/fishers-exact-test-in-r/
 # fisher.test(data)  
 
-    
 # random number generator (remember to set.seed())
 round(runif(100, 0, 1))
 
-
 # rstats - binomial distribution
 https://www.tutorialspoint.com/r/r_binomial_distribution.htm
-
-
-
-
-
-
-
-
-
-
-
-
-
-
