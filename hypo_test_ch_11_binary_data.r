@@ -98,8 +98,5 @@ plot(dbinom(x = 1:20, size = 20, prob = 0.5))
 https://www.statology.org/fishers-exact-test-in-r/
 # fisher.test(data)  
 
-# random number generator (remember to set.seed())
-round(runif(100, 0, 1))
-
 # rstats - binomial distribution
 https://www.tutorialspoint.com/r/r_binomial_distribution.htm
