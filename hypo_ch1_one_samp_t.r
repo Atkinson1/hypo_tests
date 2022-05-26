@@ -3,9 +3,9 @@ library(janitor)
 library(hablar)
 library(skimr)
 library(infer)
+library(here)
 
-x <- read_csv("C:/users/ryan/desktop/r_lesson_plan/WIP/tidymodels/stats/FuelsCosts.csv")
-x <- x %>% clean_names()
+x <- read_csv(here("FuelsCosts.csv")) %>% clean_names()
 
 skim(x)
 
@@ -26,7 +26,4 @@ null_dist %>%
 
 # t_test wrapper around original tibble
 
-# x %>%
-#   t_test(response = fuel_cost, mu = 260)
-
-
+x %>% t_test(response = fuel_cost, mu = 260)
